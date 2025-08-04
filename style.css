@@ -405,7 +405,7 @@ p {
 @media (max-width: 480px) {
   /* shrink the whole book spread */
   .book-spread {
-    transform: scale(0.7);
+    transform: scale(1.2);
     transform-origin: top center;
   }
 
