@@ -401,3 +401,63 @@ p {
   line-height: 1.3;
   color: #eee;
 }
+
+@media (max-width: 480px) {
+  /* shrink the whole book spread */
+  .book-spread {
+    transform: scale(0.7);
+    transform-origin: top center;
+  }
+
+  /* reduce gaps so two pages can still sit next to each other */
+  .book {
+    gap: 10px;
+  }
+
+  /* shrink the cover and pages */
+  #cover,
+  .flip-book {
+    width: 180px;
+    height: 288px; /* maintain 5:7 aspect ratio */
+  }
+  .page {
+    width: 180px;
+    height: 288px;
+  }
+
+  /* smaller fonts and tighter padding */
+  .spread-title {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+  .front h2,
+  .back h2 {
+    font-size: 20px;
+  }
+  .front p,
+  .back p,
+  .fun-fact .text {
+    font-size: 12px;
+  }
+  .btn-row button {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  /* shrink the search widget */
+  .search-wrapper {
+    bottom: 8px;
+    padding: 6px 8px;
+    gap: 4px;
+    transform: scale(0.9);
+  }
+  #page-search {
+    width: 50px;
+    padding: 4px 6px;
+    font-size: 12px;
+  }
+  #go-btn {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+}
