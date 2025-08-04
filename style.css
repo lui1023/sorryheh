@@ -375,6 +375,7 @@ p {
   display: block;      /* make it block-level */
   width: 75%;
   margin: 0 auto 1rem;      /* center horizontally */
+  height: auto;
 }
 
 .quote-block {
