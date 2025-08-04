@@ -267,17 +267,23 @@ img {
   cursor: pointer;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
+@media (max-width: 600px) {
+  /* move the whole “book” right so the right-hand page hugs the screen */
   .book {
-    flex-direction: column;
-    align-items: center;
+    /* cancel your previous left/transform hack */
+    left: auto !important;
+    transform: none !important;
+    /* pin to the right, with a tiny gap if you like */
+    right: 0;
+    position: relative;
+    margin: 0;
   }
-  #cover,
-  .flip-book {
-    margin-bottom: 20px;
+  /* you may also need to shrink the gap between cover & pages */
+  .book > #cover {
+    margin-right: 8px;
   }
 }
+
 
 .front,
 .back {
