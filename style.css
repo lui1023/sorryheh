@@ -33,8 +33,8 @@ img {
 }
 
 #cover {
-  width: 250px;
-  height: 400px;
+  width: 150px;
+  height: 150px;
   flex-shrink: 0;
   position: relative;
   overflow: hidden;
@@ -49,8 +49,8 @@ img {
 .flip-book {
   position: relative;
   perspective: 1500px;
-  width: 250px;
-  height: 400px;
+  width: 75px;
+  height: 500px;
   overflow: visible;
 }
 
@@ -59,7 +59,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 250px;
+  width: 275px;
   height: 400px;
   --order: 1;
   display: none; /* only show active/adjacent */
@@ -141,7 +141,7 @@ img {
 
 .front p {
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.2;
   flex-grow: 1;
   margin: 0 0 10px;
 }
@@ -402,62 +402,3 @@ p {
   color: #eee;
 }
 
-@media (max-width: 480px) {
-  /* shrink the whole book spread */
-  .book-spread {
-    transform: scale(1.2);
-    transform-origin: top center;
-  }
-
-  /* reduce gaps so two pages can still sit next to each other */
-  .book {
-    gap: 10px;
-  }
-
-  /* shrink the cover and pages */
-  #cover,
-  .flip-book {
-    width: 180px;
-    height: 288px; /* maintain 5:7 aspect ratio */
-  }
-  .page {
-    width: 180px;
-    height: 288px;
-  }
-
-  /* smaller fonts and tighter padding */
-  .spread-title {
-    font-size: 1.4rem;
-    margin-bottom: 8px;
-  }
-  .front h2,
-  .back h2 {
-    font-size: 20px;
-  }
-  .front p,
-  .back p,
-  .fun-fact .text {
-    font-size: 12px;
-  }
-  .btn-row button {
-    padding: 4px 8px;
-    font-size: 12px;
-  }
-
-  /* shrink the search widget */
-  .search-wrapper {
-    bottom: 8px;
-    padding: 6px 8px;
-    gap: 4px;
-    transform: scale(0.9);
-  }
-  #page-search {
-    width: 50px;
-    padding: 4px 6px;
-    font-size: 12px;
-  }
-  #go-btn {
-    padding: 4px 8px;
-    font-size: 12px;
-  }
-}
