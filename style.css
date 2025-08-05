@@ -17,7 +17,7 @@ body {
   justify-content: center;    /* center the .book-spread in the viewport */
   align-items: center;
   font-family: "Roboto", sans-serif;
-  background: #722323;
+  background: #000000;
 }
 
 
@@ -299,7 +299,7 @@ img {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-
+}
 /* title above the picture+page */
 .spread-title {
   width: 100%;
@@ -418,3 +418,33 @@ p {
   color: #eee;
 }
 
+.front p,
+.back p,
+.fun-fact .text {
+  -webkit-text-stroke: 0.05px black;
+}
+
+/* glow on each page frame */
+.front, .back {
+  /* existing border… */
+  border: 4px solid var(--book-border);
+  border-radius: var(--book-border-radius);
+  background-clip: padding-box;
+  /* add a pale pink glowing outline */
+  box-shadow:
+    /* the existing inset for depth */
+    inset 20px 0 50px rgba(0,0,0,0.3),
+    /* your new pink glow */
+    0 0 15px 5px rgba(255,182,193,0.6);
+}
+
+/* optionally, if you want the whole spread to glow: */
+.book-spread {
+  /* keep your existing layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  /* add glow around the whole thing */
+  box-shadow: 0 0 30px rgba(255,182,193,0.4);
+}
