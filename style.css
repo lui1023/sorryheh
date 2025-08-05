@@ -14,11 +14,12 @@ body {
   padding: 0;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end; /* ← push everything to the right edge */
   align-items: center;
   font-family: "Roboto", sans-serif;
   background: #6b3c7e;
 }
+
 
 img {
   width: 100%;
@@ -35,7 +36,7 @@ img {
 
   /* Position it against the right edge */
   position: relative;
-  right: -250px;;
+  right: -100px;;
 }
 
 
@@ -272,24 +273,6 @@ img {
   cursor: pointer;
 }
 
-@media (max-width: 600px) {
-  /* move the whole “book” right so the right-hand page hugs the screen */
-  .book {
-    /* cancel your previous left/transform hack */
-    left: auto !important;
-    transform: none !important;
-    /* pin to the right, with a tiny gap if you like */
-    right: 0;
-    position: relative;
-    margin: 0;
-  }
-  /* you may also need to shrink the gap between cover & pages */
-  .book > #cover {
-    margin-right: 8px;
-  }
-}
-
-
 .front,
 .back {
   border: 4px solid var(--book-border);
@@ -308,6 +291,13 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 16px; /* space between title and book */
+}
+
+/* only push the book-wrapper right */
+.book-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* title above the picture+page */
