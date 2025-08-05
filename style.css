@@ -28,7 +28,6 @@ img {
 
 .book {
   display: flex;
-  gap: 20px;
   /* ditch the centering hacks */
   transform: none;
   left: auto;
