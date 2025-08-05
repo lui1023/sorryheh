@@ -36,7 +36,7 @@ img {
 
   /* push the whole thing to the right edge */
   margin-left: auto;
-  margin-right: 30px; /* or 0 if you want it flush with the screen */
+  margin-right: 1px; /* or 0 if you want it flush with the screen */
 }
 
 #cover {
