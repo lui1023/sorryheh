@@ -34,7 +34,7 @@ img {
   top: 50%;
   transform: 0;
   margin: 0;       /* clear out any old flex‐ or margin‐centering hacks */
-  margin-right: 10rem;
+  margin-right: 7rem;
 }
 
 
