@@ -17,7 +17,7 @@ body {
   justify-content: center;    /* center the .book-spread in the viewport */
   align-items: center;
   font-family: "Roboto", sans-serif;
-  background: #31837c;
+  background: #451ba8;
 }
 
 
@@ -34,7 +34,7 @@ img {
   top: 50%;
   transform: 0;
   margin: 0;       /* clear out any old flex‐ or margin‐centering hacks */
-  margin-right: 2rem;
+  margin-right: 30rem;
 }
 
 
@@ -56,7 +56,7 @@ img {
 .flip-book {
   position: relative;
   perspective: 1500px;
-  width: 200px;
+  width: 75px;
   height: 500px;
   overflow: visible;
 }
