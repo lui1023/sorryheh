@@ -28,15 +28,18 @@ img {
 
 .book {
   display: flex;
-  /* ditch the centering hacks */
-  transform: none;
-  left: auto;
-  position: relative;
+  gap: 20px;
 
-  /* push the whole thing to the right edge */
-  margin-left: auto;
-  margin-right: 1px; /* or 0 if you want it flush with the screen */
+  /* Cancel any left-centering hacks */
+  left: auto !important;
+  transform: none !important;
+  margin: 0 !important;
+
+  /* Position it against the right edge */
+  position: relative;
+  right: 0;
 }
+
 
 #cover {
   width: 150px;
