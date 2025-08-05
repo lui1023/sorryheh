@@ -17,7 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Roboto", sans-serif;
-  background: #6e3232;
+  background: #498a74;
 }
 
 img {
@@ -28,8 +28,6 @@ img {
 
 .book {
   display: flex;
-  gap: 20px;
-
   /* Cancel any left-centering hacks */
   left: auto !important;
   transform: none !important;
@@ -37,7 +35,7 @@ img {
 
   /* Position it against the right edge */
   position: relative;
-  right: 0;
+  right: -50px;;
 }
 
 
