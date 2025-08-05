@@ -29,11 +29,12 @@ img {
 }
 
 .book {
-  position: static;
+  position: flex;
   right: 0;
   top: 50%;
   transform: 0;
   margin: 0;       /* clear out any old flex‐ or margin‐centering hacks */
+  margin-right: 2rem;
 }
 
 
@@ -55,7 +56,7 @@ img {
 .flip-book {
   position: relative;
   perspective: 1500px;
-  width: 75px;
+  width: 200px;
   height: 500px;
   overflow: visible;
 }
@@ -298,7 +299,6 @@ img {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-}
 
 /* title above the picture+page */
 .spread-title {
